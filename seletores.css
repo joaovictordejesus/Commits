@@ -1,0 +1,29 @@
+/* CSS João Victor de Jesus*/
+a {
+    color: red;
+    text-decoration: none; /* Tirar o sublinhado padrão */
+  }
+  
+  a:hover {
+    color: lemon;
+  }
+  
+  p {
+    font-family: Arial, sans-serif;
+  }
+  h1 + p {
+    font-weight: bold;
+  }
+  
+  .destaque {
+    font-family: Arial, sans-serif;
+  }
+  
+  p.destaque {
+    font-weight: bold;
+  }
+  
+  strong.destaque {
+    color: red;
+  }
+  
