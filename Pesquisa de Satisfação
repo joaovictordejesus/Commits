@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação 20/05</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            margin-bottom: 10px;
+        }
+        .form-section label {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pesquisa de Satisfação</h1>
+    <form action="submit_form.php" method="post">
+        <!-- Dados -->
+        <div class="form-section">
+            <h2>Dados:</h2>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </div>
+
+        <!-- Pesquisa -->
+        <div class="form-section">
+            <h2>Pesquisa</h2>
+            <label for="satisfacao">Qual seu nível de satisfação com nossos serviços?</label>
+            <div>
+                <input type="radio" id="muito-satisfeito" name="satisfacao" value="Muito Satisfeito" required>
+                <label for="muito-satisfeito">Muito Satisfeito</label>
+            </div>
+            <div>
+                <input type="radio" id="satisfeito" name="satisfacao" value="Satisfeito">
+                <label for="satisfeito">Satisfeito</label>
+            </div>
+            <div>
+                <input type="radio" id="neutro" name="satisfacao" value="Neutro">
+                <label for="neutro">Neutro</label>
+            </div>
+            <div>
+                <input type="radio" id="insatisfeito" name="satisfacao" value="Insatisfeito">
+                <label for="insatisfeito">Insatisfeito</label>
+            </div>
+            <div>
+                <input type="radio" id="muito-insatisfeito" name="satisfacao" value="Muito Insatisfeito">
+                <label for="muito-insatisfeito">Muito Insatisfeito</label>
+            </div>
+
+            <label for="recomendacao">Você recomendaria nosso serviço para outras pessoas?</label>
+            <div>
+                <input type="radio" id="sim" name="recomendacao" value="Sim" required>
+                <label for="sim">Sim</label>
+            </div>
+            <div>
+                <input type="radio" id="nao" name="recomendacao" value="Não">
+                <label for="nao">Não</label>
+            </div>
+
+            <label for="melhoria">O que você acha que devemos fazer para melhorar?</label>
+            <select id="melhoria" name="melhoria" required>
+                <option value="A">Apresentar maior variedade de produtos</option>
+                <option value="B">Melhorar os preços</option>
+                <option value="C">Melhorar o Atendimento</option>
+                <option value="D">Melhorar a estrutura do local</option>
+            </select>
+        </div>
+
+        <!-- Autorização -->
+        <div class="form-section">
+            <label>
+                <input type="checkbox" name="autorizacao" value="sim" required>
+                Eu autorizo compartilhar minha resposta com terceiros.
+            </label>
+        </div>
+
+        <button type="submit">Enviar Agora</button>
+    </form>
+
+</body>
+</html>
