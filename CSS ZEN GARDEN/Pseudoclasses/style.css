@@ -1,0 +1,32 @@
+
+a {
+  color: #0033ff; 
+  font-weight: bold; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #0033ff; 
+}
+
+a:visited {
+  font-weight: normal; 
+}
+
+
+.main p:first-of-type::first-letter {
+  font-size: 300%;
+  font-family: 'Arial', serif; 
+  float: left; 
+  margin-right: 0.1em; 
+  line-height: 1; 
+}
+
+
+.design-selection nav ul li {
+  border-top: 1px solid #94c4ff; 
+}
+
+.design-selection nav ul li:last-child {
+  border-bottom: 1px solid #94c4ff;
+}
