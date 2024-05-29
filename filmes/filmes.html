@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Filmes Favoritos João Victor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .gallery-item {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .gallery-item a {
+            text-decoration: none;
+            color: #007BFF;
+            display: block;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .gallery-item a:hover {
+            background-color: #f8f8f8;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Filmes Favoritos</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="transformers3.jpg" alt="Filme 1">
+            <a href="https://pt.wikipedia.org/wiki/Transformers:_Dark_of_the_Moon" target="_blank">Transformers 3</a>
+        </div>
+        <div class="gallery-item">
+            <img src="cap3.jpg" alt="Filme 2">
+            <a href="https://pt.wikipedia.org/wiki/Capit%C3%A3o_Am%C3%A9rica:_Guerra_Civil" target="_blank">Capitão América: Guerra Civil</a>
+        </div>
+        <div class="gallery-item">
+            <img src="vingadores endgame.jpg" alt="Filme 3">
+            <a href="https://pt.wikipedia.org/wiki/Avengers:_Endgame" target="_blank">Vingadores: Endgame</a>
+        </div>
+        <div class="gallery-item">
+            <img src="avengers.jpg" alt="Filme 4">
+            <a href="https://pt.wikipedia.org/wiki/The_Avengers_(2012)" target="_blank">Vingadores(2012)</a>
+        </div>
+        <div class="gallery-item">
+            <img src="forrest.jpg" alt="Filme 5">
+            <a href="https://pt.wikipedia.org/wiki/Forrest_Gump" target="_blank">Forrest Gump - O Contador de Histórias </a>
+        </div>
+        <div class="gallery-item">
+            <img src="starwars.jpg" alt="Filme 6">
+            <a href="https://pt.wikipedia.org/wiki/Star_Wars:_Epis%C3%B3dio_III_%E2%80%93_A_Vingan%C3%A7a_dos_Sith" target="_blank">Star Wars III - A Vingança dos Sith</a>
+        </div>
+    </div>
+</body>
+</html>
