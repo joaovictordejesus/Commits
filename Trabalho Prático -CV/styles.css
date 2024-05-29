@@ -1,0 +1,133 @@
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif;
+}
+
+
+:root {
+    --cor-principal: #3498db;
+    --cor-secundaria: #2ecc71;
+    --cor-destaque: #e74c3c;
+    --cor-fundo-rodape: #333;
+    --cor-texto-rodape: #fff;
+}
+
+
+nav {
+    background-color: var(--cor-principal);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: var(--cor-destaque);
+}
+
+
+#apresentacao {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#apresentacao h1 {
+    font-size: 2.5em;
+}
+
+#apresentacao img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#apresentacao p {
+    margin: 5px 0;
+}
+
+
+section {
+    padding: 20px;
+}
+
+section h2 {
+    border-bottom: 2px solid var(--cor-principal);
+    padding-bottom: 10px;
+}
+
+
+.instituicao, .experiencia, .certificacao {
+    margin-bottom: 20px;
+}
+
+.instituicao h3, .experiencia h3 {
+    font-size: 1.2em;
+}
+
+
+#habilidades ul {
+    list-style: disc inside;
+}
+
+
+footer {
+    background-color: var(--cor-fundo-rodape);
+    color: var(--cor-texto-rodape);
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: var(--cor-texto-rodape);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--cor-destaque);
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    #apresentacao {
+        margin-top: 100px;
+    }
+}
