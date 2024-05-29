@@ -1,0 +1,21 @@
+/* Por algum motivo o menu fica abaixo da regiao esperada, memso seguinto todas i9nstruções da atividade sobre Posicionamentos */
+.page-wrapper { 
+    position: relative; 
+}
+
+#zen-explanation {
+    width: 60%;
+    margin-right: 35%; 
+    border-right: 1px solid #1f295c; 
+    padding-right: 2%; 
+    box-sizing: border-box; 
+}
+
+#design-selection {
+    position: absolute; 
+    top: 560px; 
+    left: 62%; 
+    padding: 0 2%; 
+    width: 36%;
+    box-sizing: border-box; 
+}
