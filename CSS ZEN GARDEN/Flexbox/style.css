@@ -1,0 +1,54 @@
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+  }
+  
+  footer a {
+    flex: 0 1 auto; 
+    text-align: center;
+    padding: 10px;
+    width: 100px; 
+    box-sizing: border-box;
+  }
+  
+  
+  .benefits {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #000; 
+  }
+  
+  .benefits h3 {
+    flex: 0 0 30%;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .benefits p {
+    flex: 0 0 70%;
+  }
+  
+  .participation {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #000; 
+    border-bottom: 1px solid #000; 
+  }
+  
+  .participation h3 {
+    flex: 0 0 50%;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .participation p {
+    flex: 0 0 50%;
+  }
+  
+  .benefits + .participation {
+    border-top: none;
+  }
+  
