@@ -1,0 +1,39 @@
+/* João Victor de Jesus: Este código permite a responsividade da página */
+@media (max-width: 768px) {
+
+  .sidebar {
+      position: static;
+  }
+
+
+  .page-wrapper {
+      border: none;
+  }
+
+
+  .main {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+ 
+  header {
+      height: auto;
+  }
+
+  
+  p {
+      margin-left: 0;
+  }
+}
+@media print {
+  body {
+      font-family: "Times New Roman", Times, serif;
+  }
+
+  header {
+      background-color: white;
+      color: black;
+  }
+}
