@@ -3,7 +3,7 @@ a {
     color: red;
     text-decoration: none; /* Tirar o sublinhado padrão */
   }
-  
+  /* Muda a cor para "lemon" quando passa o mause por cima*/
   a:hover {
     color: lemon;
   }
